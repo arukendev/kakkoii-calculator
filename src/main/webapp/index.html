@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Kakkoii Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form id="form" method="post">
+      <header id="header" onmousemove="mm(event)">Kakkoii Calculator</header>
+      <main>
+        <select name="select" id="select">
+          <option value="cm">센티미터 to 인치</option>
+          <option value="m">제곱미터 to 평</option>
+          <option value="c">섭씨 to 화씨</option>
+          <option value="km">시간당 킬로미터 to 시간당 마일</option>
+        </select>
+        <input type="text" name="input" placeholder="숫자를 입력해 주세요!" />
+        <span>값을 입력해 주세요</span>
+      </main>
+      <footer>
+        <button id="button">Change!</button>
+      </footer>
+    </form>
+    <script src="app.js"></script>
+    <script>
+      function mm(event) {
+        const header = document.getElementById("header");
+        const x = event.offsetX;
+        const y = event.offsetY;
+        header.style.cssText = `
+          background-image: radial-gradient(
+            circle farthest-corner at ${x}px ${y}px,
+            #00dbde 0%,
+            #fc00ff 100%
+          );
+    		`;
+      }
+    </script>
+  </body>
+</html>

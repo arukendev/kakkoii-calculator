@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Open+Sans:wght@300&display=swap");
+@import "reset.css";
+
+body {
+  height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0f2027; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+sup {
+  vertical-align: super;
+  font-size: 1rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+form {
+  width: 450px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #0f2027;
+  display: grid;
+  grid-template-rows: 300px 250px 100px;
+  gap: 20px;
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+.resultBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+i {
+  font-size: 2rem;
+}
+
+i,
+h1,
+h2 {
+  color: #d1d8e0;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+header {
+  padding-left: 20px;
+  font-size: 28px;
+  color: #d1d8e0;
+  display: flex;
+  align-items: center;
+  background-image: radial-gradient(
+    circle farthest-corner at 12.3% 19.3%,
+    #00dbde 0%,
+    #fc00ff 100%
+  );
+}
+
+#cmHeader {
+  background-image: radial-gradient(
+    circle farthest-corner at 12.3% 19.3%,
+    #38ada9 0%,
+    #78e08f 100%
+  );
+}
+
+#mHeader {
+  background-image: radial-gradient(
+    circle farthest-corner at 12.3% 19.3%,
+    #1e3799 0%,
+    #60a3bc 100%
+  );
+}
+
+#cHeader {
+  background-image: radial-gradient(
+    circle farthest-corner at 12.3% 19.3%,
+    #f6b93b 0%,
+    #eb2f06 100%
+  );
+}
+
+#kmHeader {
+  background-image: radial-gradient(
+    circle farthest-corner at 12.3% 19.3%,
+    #b71540 0%,
+    #c56cf0 100%
+  );
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+main input {
+  font-family: "Noto Sans KR", sans-serif;
+  padding: 10px 0;
+  font-size: 20px;
+  text-align: center;
+  background-color: inherit;
+  border: none;
+  border-bottom: #0f2027 1px solid;
+  color: #d1d8e0;
+  transition: border-bottom-color 0.3s ease-in-out;
+}
+
+main input:focus {
+  outline: none;
+  border-bottom-color: #d1d8e0;
+}
+
+main input:invalid {
+  border-bottom-color: tomato;
+}
+
+main select {
+  color: #d1d8e0;
+  font-size: 18px;
+  background-color: inherit;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+select option {
+  background-color: #0f2027;
+}
+
+footer button {
+  background-image: linear-gradient(
+    to right,
+    #00dbde 0%,
+    #fc00ff 50%,
+    #00dbde 100%
+  );
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  margin: 20px;
+  padding: 15px 45px;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: #d1d8e0;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+#cmButton {
+  background-image: linear-gradient(
+    to right,
+    #38ada9 0%,
+    #78e08f 50%,
+    #38ada9 100%
+  );
+}
+
+#mButton {
+  background-image: linear-gradient(
+    to right,
+    #1e3799 0%,
+    #60a3bc 50%,
+    #1e3799 100%
+  );
+}
+
+#cButton {
+  background-image: linear-gradient(
+    to right,
+    #f6b93b 0%,
+    #eb2f06 50%,
+    #f6b93b 100%
+  );
+}
+
+#kmButton {
+  background-image: linear-gradient(
+    to right,
+    #b71540 0%,
+    #c56cf0 50%,
+    #b71540 100%
+  );
+}
+
+footer button:hover {
+  background-position: right center;
+  text-decoration: none;
+}
+
+span {
+  display: block;
+  opacity: 0;
+  color: #ff6347;
+  transition: opacity 0.3s ease-in-out;
+}
