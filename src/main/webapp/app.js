@@ -6,18 +6,24 @@ const span = document.querySelector("span");
 
 const reg = /^[+-]?\d*$/;
 
+const errorHandler = (event) => {
+  input.style.borderBottomColor = "tomato";
+  span.innerText = event;
+  span.style.opacity = 1;
+};
+
 const onSubmitHandler = (event) => {
   event.preventDefault();
+  if (input.value.length >= 5) {
+    errorHandler("1만 이내의 정수를 입력해 주세요!");
+    return false;
+  }
   if (reg.test(input.value) == false) {
-    input.style.borderBottomColor = "tomato";
-    span.innerText = "정수만 입력해 주세요!";
-    span.style.opacity = 1;
+    errorHandler("정수만 입력해 주세요!");
     return false;
   }
   if (input.value == "") {
-    input.style.borderBottomColor = "tomato";
-    span.innerText = "값을 입력해 주세요!";
-    span.style.opacity = 1;
+    errorHandler("값을 입력해 주세요!");
     return false;
   }
   const selectValue = select.value;
