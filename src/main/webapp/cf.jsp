@@ -9,8 +9,7 @@
 </head>
 <body>
 	<form action="index.html">
-		<header id="cHeader" onmousemove="mm(event)">Kakkoii
-			Calculator</header>
+		<header id="cHeader">Kakkoii Calculator</header>
 		<main>
 			<%
 			int input = Integer.parseInt(request.getParameter("input"));
@@ -30,20 +29,10 @@
 			</div>
 		</main>
 		<footer>
-			<button id="cButton">Back</button>
+			<button id="cButton">Back!</button>
 		</footer>
 	</form>
-	<script type="text/javascript">
-		function mm(event) {
-			const header = document.getElementById("cHeader");
-			const x = event.offsetX;
-			const y = event.offsetY;
-			header.style.cssText = "background-image: radial-gradient("
-					+ "circle farthest-corner at " + x + "px " + y
-					+ "px,#f6b93b 0%, #eb2f06 100%);"
-
-		}
-	</script>
+	<script src="app.js"></script>
 	<script src="https://kit.fontawesome.com/6478f529f2.js"
 		crossorigin="anonymous"></script>
 </body>
