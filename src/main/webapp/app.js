@@ -7,9 +7,9 @@ const span = document.querySelector("span");
 
 const reg = /^[+-]?\d*$/;
 
-const errorHandler = (event) => {
+const errorHandler = (error) => {
   input.style.borderBottomColor = "tomato";
-  span.innerText = event;
+  span.innerText = error;
   span.style.opacity = 1;
 };
 
@@ -62,9 +62,9 @@ const onMousemoveHandler = (event) => {
   }
   header.style.cssText = `
     background-image: radial-gradient(
-        circle farthest-corner at ${x}px ${y}px,
-        ${color1} 0%,
-        ${color2} 100%
+      circle farthest-corner at ${x}px ${y}px,
+      ${color1} 0%,
+      ${color2} 100%
     );
   `;
 };

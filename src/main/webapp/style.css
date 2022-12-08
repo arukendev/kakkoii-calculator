@@ -28,11 +28,6 @@ sup {
   font-size: 1rem;
 }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  appearance: none;
-}
-
 form {
   width: 450px;
   border-radius: 20px;
@@ -151,10 +146,6 @@ main input:focus {
   border-bottom-color: #d1d8e0;
 }
 
-main input:invalid {
-  border-bottom-color: tomato;
-}
-
 main select {
   color: #d1d8e0;
   font-size: 18px;
@@ -229,6 +220,7 @@ footer button:hover {
 }
 
 span {
+	height: 20px;
   display: block;
   opacity: 0;
   color: #ff6347;

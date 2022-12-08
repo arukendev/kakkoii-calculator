@@ -8,14 +8,14 @@
 <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+	<%
+	int input = Integer.parseInt(request.getParameter("input"));
+	double calculate = (input * 1.8) + 32;
+	String result = String.format("%.1f", calculate);
+	%>
 	<form action="index.html">
 		<header id="cHeader">Kakkoii Calculator</header>
 		<main>
-			<%
-			int input = Integer.parseInt(request.getParameter("input"));
-			double calculate = (input * 1.8) + 32;
-			String result = String.format("%.1f", calculate);
-			%>
 			<div class="resultBox">
 				<div class="result">
 					<h1><%=input%></h1>
