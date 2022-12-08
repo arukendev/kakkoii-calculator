@@ -34,47 +34,24 @@ form {
   overflow: hidden;
   background-color: #0f2027;
   display: grid;
-  grid-template-rows: 300px 250px 100px;
+  grid-template-rows: 300px 200px 100px;
   gap: 20px;
   box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.3);
-}
-
-.resultBox {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 35px;
-}
-
-.result {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
-
-i {
-  font-size: 2rem;
+  color: #d1d8e0;
 }
 
 i,
-h1,
 h2 {
-  color: #d1d8e0;
+  font-size: 2rem;
 }
 
 h1 {
   font-size: 3rem;
 }
 
-h2 {
-  font-size: 2rem;
-}
-
 header {
   padding-left: 20px;
   font-size: 28px;
-  color: #d1d8e0;
   display: flex;
   align-items: center;
   background-image: radial-gradient(
@@ -121,7 +98,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 40px;
 }
 
 footer {
@@ -130,6 +107,7 @@ footer {
 }
 
 main input {
+  color: #d1d8e0;
   font-family: "Noto Sans KR", sans-serif;
   padding: 10px 0;
   font-size: 20px;
@@ -137,7 +115,6 @@ main input {
   background-color: inherit;
   border: none;
   border-bottom: #0f2027 1px solid;
-  color: #d1d8e0;
   transition: border-bottom-color 0.3s ease-in-out;
 }
 
@@ -168,7 +145,8 @@ footer button {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   margin: 20px;
-  padding: 15px 45px;
+  width: 150px;
+  padding: 15px 0;
   text-align: center;
   transition: 0.5s;
   background-size: 200% auto;
@@ -216,13 +194,26 @@ footer button {
 
 footer button:hover {
   background-position: right center;
-  text-decoration: none;
 }
 
 span {
-	height: 20px;
+  color: tomato;
+  height: 20px;
   display: block;
   opacity: 0;
-  color: #ff6347;
   transition: opacity 0.3s ease-in-out;
+}
+
+.resultBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
