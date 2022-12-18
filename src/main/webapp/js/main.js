@@ -1,7 +1,5 @@
 const form = document.querySelector("form");
 const header = document.querySelector("header");
-const main = document.querySelector("main");
-const select = document.querySelector("select");
 const input = document.querySelector("input");
 const span = document.querySelector("span");
 
@@ -27,16 +25,6 @@ const onSubmitHandler = (event) => {
     if (input.value === "") {
       errorHandler("값을 입력해 주세요!");
       return false;
-    }
-    const selectValue = select.value;
-    if (selectValue === "cm") {
-      form.action = "cminch.jsp";
-    } else if (selectValue === "m") {
-      form.action = "mpyeong.jsp";
-    } else if (selectValue === "c") {
-      form.action = "cf.jsp";
-    } else {
-      form.action = "kmmi.jsp";
     }
   }
   form.submit();
